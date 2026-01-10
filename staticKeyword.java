@@ -8,6 +8,10 @@ class Mobile {
     public void show() {
         System.out.println(brand + " : " + price + " : " + name);
     }
+
+    public static void show1(Mobile obj) {
+        System.out.println(obj.brand + " : " + obj.price + " : " + name);
+    }
 }
 
 public class staticKeyword {
@@ -27,5 +31,7 @@ public class staticKeyword {
         
         obj1.show();
         obj2.show();
+
+        Mobile.show1(obj1);
     }
 }
